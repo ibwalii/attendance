@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:rgba(236,245,245,0.98);
+	padding:2px;
+}
+.logincontent{
+	min-height: calc(100vh - 60px);
+	}
+.content{
+	min-height: calc(90vh - 50px);
+	}
+.navbar{
+	margin-bottom:0px;
+	
+	}	
+.navbar-default{
+	background:#2A2A57;
+	box-shadow:1px 4px 3px 1px #3D3434;
+	margin-bottom:3px;
+	border:none;
+	}
+.navbar-default .navbar-brand {
+  color:#F9F9F9;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFF;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #F9F9F9;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FFF;
+  cursor:pointer !important;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.logindiv{
+	display:block;
+	margin-left:auto; 
+	margin-right:auto;
+	margin-top:40%;
+	margin-bottom:auto;
+	color:rgba(131,126,126,1.00);
+	}
+.logindiv button, input, .input-group{
+	-webkit-box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.5);
+  	-moz-box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.5);
+  	box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.5); 
+	}
+@media (min-width:450px) and (max-width:990px){
+	.logindiv .imgheader img{
+		display:block;
+		float:none !important;
+		margin:0 auto;
+		}
+	}
+.logindiv #loginbody{
+	clear:both;
+	}	
+.logindiv label{
+	font-weight:bold;
+	font-size:14px;
+	}
+.logindiv .input-group{
+	margin-bottom:20px;
+	}	
+.logindiv button[type='submit']{
+	background:#2A2A57;
+	border:none;
+	color:#FFEEFF;
+	}
+.logindiv button[type='submit']:hover{
+	background:#3E3E82;
+	color:#FFF;
+}
+.footer{
+	height:50px;
+	}
+.footer.other{
+	background:#2A2A57;
+	}	
+.footer p{
+	color:rgba(140,137,138,1.00);
+	text-shadow:1px 1px rgba(39,37,37,1.00);
+	}
+.footer.other p{
+	color:rgba(140,137,138,1.00);
+	text-shadow:1px 1px rgba(249,249,249,1.0);
+	}		
+#navigations{
+	background:rgba(153,178,228,0.50);
+	overflow:scroll;
+	overflow-x:hidden;
+	height: calc(100vh - 115px);
+	}
+#main-panel{
+	background:rgba(255,255,255,0.1);
+	overflow:scroll;
+	overflow-x:hidden;
+	height: calc(100vh - 115px);
+	margin-bottom:10px;
+	}
+.holder{
+	width:100%;
+	background:#FFF;
+	-webkit-box-shadow: 1px 4px 3px 1px rgba(0, 0, 0, 0.5);
+  	-moz-box-shadow: 1px 4px 3px 1px rgba(0, 0, 0, 0.5);
+  	box-shadow: 1px 4px 3px 1px rgba(0, 0, 0, 0.5); 
+	padding-top:1px;
+	padding-left:5px;
+	padding-bottom:5px;
+	border-radius:5px;
+	}	
+@media (min-width:450px) and (max-width:990px){	
+#navigations{
+	height: calc(70vh - 115px);
+	}
+#main-panel{
+	height: calc(70vh - 115px);
+	}
+}	
+#navigations details{
+	color:rgba(0,0,0,1.00);
+	font-size:20px;
+	cursor:pointer;
+	}
+#navigations details p{
+	color:rgba(0,0,0,1.00);
+	font-size:15px;
+	padding-left:10px;
+	}	
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(20,20,20,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(20,20,20,0.3);
+	background:#2A2A57; 
+}	
+
+@media only screen and (max-width: 800px) {
+    
+    /* Force table to not be like tables anymore */
+#no-more-tables table, 
+#no-more-tables thead, 
+#no-more-tables tbody, 
+#no-more-tables th, 
+#no-more-tables td, 
+#no-more-tables tr { 
+	display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+#no-more-tables thead tr { 
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	}
+ 
+#no-more-tables tr { border: 1px solid #ccc; }
+ 
+#no-more-tables td { 
+		/* Behave  like a "row" */
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+	padding-left: 50%; 
+	white-space: normal;
+	text-align:left;
+	}
+ 
+ #no-more-tables td:before { 
+		/* Now like a table header */
+	position: absolute;
+		/* Top/left values mimic padding */
+	top: 6px;
+	left: 6px;
+	width: 45%; 
+	padding-right: 10px; 
+	white-space: nowrap;
+	text-align:left;
+	font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+#no-more-tables td:before { content: attr(data-title); }
+}
